@@ -65,8 +65,22 @@ body {
     grid-column: span 4;
     background-color: #2ecc71;
     color: #fff;
+    font-size: 1.5em;
 }
 
 .btn.equal:hover {
     background-color: #27ae60;
+}
+
+/* Adjusting the layout for better alignment */
+.buttons {
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.btn:nth-last-child(-n+4) {
+    grid-column: span 1;
+}
+
+.btn.equal {
+    grid-column: span 4;
 }
